@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+root {
+    --dark-color: #062e33;
+    --light-yellow: #f2dd80;
+    --light: #f6f8ea;
+    --dark-yellow: #062f33;
+    --fyroz: #1d7977;
+}
+
+body {
+    background-color: #062f33;
+}
+
+.buttons {
+    display: flex;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+#Register_button {
+    background-color: #f2dd80;
+    margin-left: 1px;
+    width: 50%;
+}
+
+    #Register_button :hover {
+        background-color: #062f33;
+        width: 100%;
+    }
+
+.divider {
+    display: inline-flex;
+}
