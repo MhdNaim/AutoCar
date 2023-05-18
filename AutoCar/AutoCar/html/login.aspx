@@ -22,7 +22,7 @@
           <div class="col-md-6 col-lg-6 col-xl-5 offset-xl-1">
         
               <div>
-                <h1 class="fw-bold mb-4" style="color: #f2dd80">Sign in</h1>
+                <h1 class="fw-bold mb-4" style="color: #f2dd80">Sign in islam</h1>
               </div>
               <!-- Email input -->
               <div class="form-outline mb-4">
