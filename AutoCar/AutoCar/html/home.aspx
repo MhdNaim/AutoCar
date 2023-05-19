@@ -32,48 +32,56 @@
                 <div class="collapse navbar-collapse" id="main">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link p-lg-3" aria-current="page" href="#">Home</a>
+                            <a class="nav-link p-lg-3" aria-current="page" href="#order">Order Now</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-lg-3" aria-current="page" href="#">About us</a>
+                            <a class="nav-link p-lg-3" aria-current="page" href="#aboutus">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-lg-3" href="#">Our Team</a>
+                            <a class="nav-link p-lg-3" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-lg-3" href="#team">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-lg-3" href="#join">Join Us</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link p-lg-3" href="#">Safety</a>
+                            <asp:Button ID="register_button" runat="server" CssClass=" btn nav-link p-lg-3" Text="Sign Up" OnClick="register_button_click" />
                         </li>
+
                         <li class="nav-item">
-                            <asp:Button ID="register_button" runat="server" CssClass=" btn nav-link p-lg-3" Text="Join us" OnClick="register_button_click" />
-                        </li>
-                        
-                        <li class="nav-item">
-                            <asp:Button ID="login_button" runat="server" CssClass=" btn nav-link p-lg-3" Text="Join in" OnClick="login_button_click" />
+                            <asp:Button ID="login_button" runat="server" CssClass=" btn nav-link p-lg-3" Text="Sign In" OnClick="login_button_click" />
                         </li>
 
                         <li class="nav-item">
                             <asp:Button ID="logout_button" runat="server" CssClass=" btn nav-link p-lg-3" Text="Logout" OnClick="logout_button_click" />
                         </li>
                     </ul>
-                    <!-- <a class="nav_button btn rounded-pill main-btn" href="#"
-            ><button class="nav_button" type="submit">
-              Sign in
-            </button></a
-          > -->
-                    <!-- <button class="btn btn-outline-success" type="submit">Sign in</button> -->
                 </div>
             </div>
         </nav>
+
+        <div class="w-section section" id="order" style="background-image: url(../images/app-bg-2.jpg); padding-top: 120px; background-position: 50% 50%; background-size: cover; padding-bottom: 120px; background-repeat: no-repeat; height: 100vh">
+            <div class="content" style="position: absolute; left: 0; top: 50%; right: 0; display: block; margin-right: auto; margin-left: auto; text-align: center">
+                <p style="max-width: 700px; font-size: 30px; line-height: 30px; margin-bottom: 20px; margin-left: 200px; font-weight: bolder; color: gray">
+                    <span style="color: #ec8924">AutoCar</span> uses your phone's GPS to detect your location and connect you with the nearest available<span style="color: #ec8924">AutoCar</span>  driver. Just kick back, relax, and we will be there before you know it.
+                </p>
+                <asp:Button ID="Button1" runat="server" Style="margin-left: 480px" Text="Order Now" class="button" OnClick="order_button_click" />
+
+            </div>
+        </div>
         <section
-            id="hero"
+            id="heropage"
             class="text-light text-center text-md-start py-5"
             style="background-color: #e9eed6">
             <div class="container">
-                <div class="d-sm-flex align-items-center" style="height: 100vh">
+
+                <div class="d-sm-flex align-items-center" id="aboutus" style="height: 100vh">
                     <!-- div>h1+img -->
                     <div class="py-5 col-md-6 mt-5" style="height: 68vh">
-                        <h1 style="color: #062e33">About Us</h1>
+                        <h1 style="color: #062e33; margin-top: 100px">About Us</h1>
                         <h2 style="color: #ec9555">We reimagine the way the world moves for the better
                         </h2>
                         <p style="color: #1d7977; font-size: 20px">
@@ -84,7 +92,6 @@
               the ways you want to earn. Across the entire world. In real time.
               At the incredible speed of now.
                         </p>
-                        <asp:Button ID="order_button" runat="server" Text="Order Now" class="button" OnClick="order_button_click" />
 
                     </div>
 
@@ -92,48 +99,34 @@
                         class="d-none d-sm-block img-fluid w-50 ms-5 mb-0"
                         src="../images/cherrydeck-rMILC1PIwM0-unsplash.jpg"
                         alt="" />
-                    <!-- <div class="col-md-4 col-lg-5 ms-5 mb-5">
-                    <img src="cherrydeck-rMILC1PIwM0-unsplash.jpg"
-                      class="img-fluid" alt="Phone image">
-                  </div> -->
+                   
                 </div>
-                <div class="d-sm-flex align-items-center" style="height: 100vh">
-                    <!-- div>h1+img -->
-                    <img
-                        class="d-none d-sm-block img-fluid w-50 ms-10 mb-0"
-                        src="../images/safety_-removebg-preview.png"
-                        alt="" />
-                    <div class="py-5 col-md-6 mt-5" style="height: 75vh">
-                        <h1 style="color: #062e33"
-                            class="ms-10 mb-0">Your safety drives us </h1>
-
-                        <p style="color: #1d7977; font-size: 20px">
-                            Whether you’re in the back seat or behind the wheel,
-                            your safety is essential. We are committed to doing our part, 
-                            and technology is at the heart of our approach.
-                            We partner with safety advocates and develop new technologies
-                            and systems to help improve safety and help make it easier for everyone to get around.
-                        </p>
-                         
-                    </div>
-
-
-                    <!-- <div class="col-md-4 col-lg-5 ms-5 mb-5">
-                    <img src="cherrydeck-rMILC1PIwM0-unsplash.jpg"
-                      class="img-fluid" alt="Phone image">
-                  </div> -->
+                </div>
+              
+        </section>
+        <div class="w-section section" id="pricing" style="background-image: url(../images/app-bg-3.jpg); padding-top: 120px; background-position: 50% 50%; background-size: cover; padding-bottom: 120px; background-repeat: no-repeat; height: 100vh">
+            <div class="content" style="justify-items: center; left:0; top: 50%; right: 0; display: block; margin-right: auto; margin-left: auto; text-align: center">
+                <h1 style="color:#fff5d4; margin-top:150px"
+                    class="ms-10 mb-0">Reliable Pricing.<br /> Accountable Service.</h1>
+                <div style="margin-top:40px; margin-left: 22%">
+                    <p style="max-width: 700px; font-size: 24px; line-height: 30px; margin-bottom: 20px; margin-left: 200px; font-weight: bolder; color: #fff5d4; font-family: 'Muller Medium',sans-serif">
+                        We respect your privacy, so we built our app to work without having your credit card on file so you can pay your driver your way, not ours, with cash or a credit card. With YellowCabCo., you can always rely on a consistent fare, with no surge pricing, during peak transportation events while letting you give immediate feedback on how our drivers are doing out in the field.               
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        
 
-        <section class="vh-100" style="background-color: #e9eed6; height: 100vh">
-            <div class="container py-5 h-100">
-                <div class="row  align-items-center h-100">
+
+
+        <section class="vh-35" style="background-color: #062e33; height: 100vh">
+            <div class="container py-5">
+
+                <div class="row  align-items-center h-80">
+                    <h1 style="color: #e9eed6; margin-bottom: 50px;margin-top:60px"  id="team">Our Team</h1>
                     <!--card one -->
                     <div class="col-md-3 col-xl-3">
-                        <div class="card" style="border-radius: 15px">
+                        <div class="card" style="border-radius: 15px;background-color:#e1efc7">
                             <div class="card-body text-center">
                                 <div class="mt-3 mb-4">
                                     <img src="../images/anas.jpg"
@@ -141,7 +134,7 @@
                                 </div>
                                 <h4 class="mb-2">Anas</h4>
                                 <p class="text-muted mb-4">
-                                    Programmer 
+                                    Markiting Manager
                                 </p>
                                 <div class="mb-4 pb-2">
                                     <button type="button" class="btn btn-floating" style="background-color: #062e33; color: #ec9555">
@@ -157,12 +150,12 @@
 
                                 <div class="d-flex justify-content-between text-center mt-5 mb-2">
                                     <div>
-                                        <p class="mb-2 h5">8471</p>
-                                        <p class="text-muted mb-0">Wallets Balance</p>
+                                        <p class="mb-2 h5">71</p>
+                                        <p class="text-muted mb-0">Project</p>
                                     </div>
                                     <div class="px-3">
-                                        <p class="mb-2 h5">8512</p>
-                                        <p class="text-muted mb-0">Income amounts</p>
+                                        <p class="mb-2 h5">4 Years</p>
+                                        <p class="text-muted mb-0">Experince</p>
                                     </div>
                                     <!--   <div>
                                         <p class="mb-2 h5">4751</p>
@@ -175,7 +168,7 @@
 
                     <!--card two -->
                     <div class="col-md-3 col-xl-3">
-                        <div class="card" style="border-radius: 15px">
+                        <div class="card" style="border-radius: 15px;background-color:#e1efc7">
                             <div class="card-body text-center">
                                 <div class="mt-3 mb-4">
                                     <img src="../images/photo_2022-06-21_18-12-00 (2).jpg"
@@ -183,7 +176,7 @@
                                 </div>
                                 <h4 class="mb-2">Islam Alabd</h4>
                                 <p class="text-muted mb-4">
-                                    Programmer 
+                                   Front-end Developer 
                                 </p>
                                 <div class="mb-4 pb-2">
                                     <button type="button" class="btn btn-floating" style="background-color: #062e33; color: #ec9555">
@@ -199,32 +192,28 @@
 
                                 <div class="d-flex justify-content-between text-center mt-5 mb-2">
                                     <div>
-                                        <p class="mb-2 h5">8471</p>
-                                        <p class="text-muted mb-0">Wallets Balance</p>
+                                        <p class="mb-2 h5">20</p>
+                                        <p class="text-muted mb-0">Project</p>
                                     </div>
                                     <div class="px-3">
-                                        <p class="mb-2 h5">8512</p>
-                                        <p class="text-muted mb-0">Income amounts</p>
-                                    </div>
-                                    <!--  <div>
-                                        <p class="mb-2 h5">4751</p>
-                                        <p class="text-muted mb-0">Total Transactions</p>
-                                    </div> -->
+                                        <p class="mb-2 h5">3 Years</p>
+                                        <p class="text-muted mb-0">Experince</p>
+                                    </div>                                  
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--card three -->
-                    <div class="col-md-3 col-xl-3 d-flex">
-                        <div class="card" style="border-radius: 15px">
+                   <div class="col-md-3 col-xl-3">
+                        <div class="card" style="border-radius: 15px;background-color:#e1efc7">
                             <div class="card-body text-center">
                                 <div class="mt-3 mb-4">
                                     <img src="../images/naim.jpg"
                                         class="rounded-circle img-fluid" style="width: 100px; height: 90px" />
                                 </div>
-                                <h4 class="mb-2">Naim </h4>
+                                <h4 class="mb-2">Naim Ayroud</h4>
                                 <p class="text-muted mb-4">
-                                    Programmer 
+                                   Back-end Developer 
                                 </p>
                                 <div class="mb-4 pb-2">
                                     <button type="button" class="btn btn-floating" style="background-color: #062e33; color: #ec9555">
@@ -240,17 +229,13 @@
 
                                 <div class="d-flex justify-content-between text-center mt-5 mb-2">
                                     <div>
-                                        <p class="mb-2 h5">8471</p>
-                                        <p class="text-muted mb-0">Wallets Balance</p>
+                                        <p class="mb-2 h5">15</p>
+                                        <p class="text-muted mb-0">Project</p>
                                     </div>
                                     <div class="px-3">
-                                        <p class="mb-2 h5">8512</p>
-                                        <p class="text-muted mb-0">Income amounts</p>
-                                    </div>
-                                    <!--  <div>
-                                        <p class="mb-2 h5">4751</p>
-                                        <p class="text-muted mb-0">Total Transactions</p>
-                                    </div> -->
+                                        <p class="mb-2 h5">5 Years</p>
+                                        <p class="text-muted mb-0">Experince</p>
+                                    </div>                                 
                                 </div>
                             </div>
                         </div>
@@ -258,7 +243,7 @@
 
                     <!-- card four -->
                     <div class="col-md-3 col-xl-3">
-                        <div class="card" style="border-radius: 15px">
+                        <div class="card" style="border-radius: 15px;background-color:#e1efc7">
                             <div class="card-body text-center">
                                 <div class="mt-3 mb-4">
                                     <img src="#"
@@ -266,7 +251,7 @@
                                 </div>
                                 <h4 class="mb-2">Ammar </h4>
                                 <p class="text-muted mb-4">
-                                    Programmer 
+                                  HR Manager 
                                 </p>
                                 <div class="mb-4 pb-2">
                                     <button type="button" class="btn btn-floating" style="background-color: #062e33; color: #ec9555">
@@ -282,17 +267,13 @@
 
                                 <div class="d-flex justify-content-between text-center mt-5 mb-2">
                                     <div>
-                                        <p class="mb-2 h5">8471</p>
-                                        <p class="text-muted mb-0">Wallets Balance</p>
+                                        <p class="mb-2 h5">5 </p>
+                                        <p class="text-muted mb-0">Award</p>
                                     </div>
                                     <div class="px-3">
-                                        <p class="mb-2 h5">8512</p>
-                                        <p class="text-muted mb-0">Income amounts</p>
-                                    </div>
-                                    <!--  <div>
-                                        <p class="mb-2 h5">4751</p>
-                                        <p class="text-muted mb-0">Total Transactions</p>
-                                    </div> -->
+                                        <p class="mb-2 h5">6 Years</p>
+                                        <p class="text-muted mb-0">Experince</p>
+                                    </div>                               
                                 </div>
                             </div>
                         </div>
@@ -304,33 +285,27 @@
 
         <section id="hero"
             class="text-light text-center text-md-start py-5"
-            style="background-color: #e9eed6">
-             <div class="container">
-            <div class="d-sm-flex align-items-center" style="height: 100vh">
-                <!-- div>h1+img -->
-                <div class="py-5 col-md-6 mt-5" style="height: 75vh">
-                    <h1 style="color: #062e33"
-                        class="ms-10 mb-0">Join a fleet in Damascus to drive with AutoCar </h1>
+            style="background-color: #e9eed6;height:100vh">
+            <div class="container" id="join">
+                <div class="d-sm-flex align-items-center">
+                    <!-- div>h1+img -->
+                    <div class="py-5 col-md-6 mt-5">
+                        <h1 style="color: #062e33; margin-top: 80px"
+                            class="ms-10 mb-0">Join a fleet in Damascus to drive with AutoCar </h1>
 
-                    <p style="color: #1d7977; font-size: 20px">
-                        Looking for driving jobs in Damascus?
+                        <p style="color: #1d7977; font-size: 20px">
+                            Looking for driving jobs in Damascus?
                         Become an employed driver with a fleet car company that partners with AutoCar. 
                         Start driving for them using AutoCar’s Driver website.
-                    </p>
+                        </p>
 
+                    </div>
+                    <img
+                        class="d-none d-sm-block img-fluid w-50 h-70 mx-3 mb-0"
+                        src="../images/join_us-removebg-preview.png"
+                        alt="" />
                 </div>
-                <img
-                    class="d-none d-sm-block img-fluid w-50 h-50 ms-10 mb-0"
-                    src="../images/join_us-removebg-preview.png"
-                    alt="" />
-
-
-                <!-- <div class="col-md-4 col-lg-5 ms-5 mb-5">
-                    <img src="cherrydeck-rMILC1PIwM0-unsplash.jpg"
-                      class="img-fluid" alt="Phone image">
-                  </div> -->
             </div>
-                 </div>
         </section>
 
         <!-- Footer -->

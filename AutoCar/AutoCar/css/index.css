@@ -1,58 +1,61 @@
-.body{
+.body {
     font-family: "Roboto",sans-serif;
 }
-.navbar{
+
+.navbar {
     background-color: #062e33;
 }
-.navbar-brand{
-   font-size: 2rem;
-   color: whitesmoke;
+
+.navbar-brand {
+    font-size: 2rem;
+    color: whitesmoke;
 }
+
 .logo {
     height: 57px;
- }
-.navbar .navbar-nav .nav-link{
+}
+
+.navbar .navbar-nav .nav-link {
     border-radius: 40px;
     padding: 9px 14px;
     font-size: 1.3rem;
     color: #f2dd80;
 }
-.navbar .navbar-nav .nav-link:active,
-.navbar .navbar-nav .nav-link:focus,
-.navbar .navbar-nav .nav-link:hover
-{
-    background-color: #093c42;
-    /* color: #ec9555;
+
+    .navbar .navbar-nav .nav-link:active,
+    .navbar .navbar-nav .nav-link:focus,
+    .navbar .navbar-nav .nav-link:hover {
+        background-color: #093c42;
+        /* color: #ec9555;
     border-bottom: 2px;
     border-style: solid;
     border-color: #ec9555; */
-}
-.button
-{
-    background-color: #f2dd80;
-    color: #062e33"
-}
+    }
+
 .button {
-	background: #062e33;
-	font-size: 14px;
-	margin-top: 30px;
-	padding: 9px 14px;
-	border-radius: 26px;
-	border: 3px solid #e9eed6;
-	font-weight: 700;
-	display: flex;
-	align-items: center;
-	color: #ec9555;
-	box-shadow: 0px 2px 2px #ec9555;
-	cursor: pointer;
-	transition: .2s;
-
-}
-.button:active,
-.button:focus,
-.button:hover {
-	border-color: #ec9555;
-    outline: none;
+    background-color: #f2dd80;
+    color: #062e33;
 }
 
+.button {
+    background: #062e33;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 9px 14px;
+    border-radius: 26px;
+    border: 3px solid #e9eed6;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: #ec9555;
+    box-shadow: 0px 2px 2px #ec9555;
+    cursor: pointer;
+    transition: .2s;
+}
 
+    .button:active,
+    .button:focus,
+    .button:hover {
+        border-color: #ec9555;
+        outline: none;
+    }
