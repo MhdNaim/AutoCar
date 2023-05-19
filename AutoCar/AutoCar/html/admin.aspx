@@ -96,15 +96,16 @@
 
             <asp:GridView ID="myGridView" runat="server" AutoGenerateColumns="False">
                 <Columns>
-                    <asp:BoundField DataField="first_name" HeaderText="First Namr" />
-                    <asp:BoundField DataField="last_name" HeaderText="Name" />
-                    <asp:BoundField DataField="is_emp" HeaderText="Employee" />
                     <asp:TemplateField HeaderText="Actions">
                         <ItemTemplate>
                             <asp:Button ID="btnUpdate" runat="server" Text="Update" CommandName="UpdateRecord" CommandArgument='<%# Eval("users_id") %>' />
                             <asp:Button ID="btnDelete" runat="server" Text="Delete" CommandName="DeleteRecord" CommandArgument='<%# Eval("users_id") %>' />
                         </ItemTemplate>
                     </asp:TemplateField>
+                    <asp:BoundField DataField="first_name" HeaderText="First Namr" />
+                    <asp:BoundField DataField="last_name" HeaderText="Name" />
+                    <asp:BoundField DataField="is_emp" HeaderText="Employee" />
+                    
                 </Columns>
             </asp:GridView>
 
