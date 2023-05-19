@@ -72,23 +72,45 @@
                                         <li>
                                             <hr class="" style="color: #f2dd80;" />
                                         </li>
-                                        <li><a class="link" href="#" id="tap2">Show  Report <i class="far fa-eye"></i></a></li>
+                                        <li><a class="link" href="#" id="tap3">Show  Report <i class="far fa-eye"></i></a></li>
                                         <li>
                                             <hr class="" style="color: #f2dd80;" />
                                         </li>
-                                        <li><a class="link" href="#" id="tap3">My Info <i class="fas fa-info-circle"></i></a></li>
+                                        <li><a class="link" href="#" id="tap4">My Info <i class="fas fa-info-circle"></i></a></li>
                                     </ul>
                                 </li>
                             </ul>
                             <div class="d-flex mt-3" role="search">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button class="searchb" type="submit">Search</button>
+                                <asp:Button UseSubmitBehavior="false" ID="Button1" runat="server" CssClass="searchb" Text="Search" />
+
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
-            <div class="blog-card">
+
+
+           
+
+
+            <asp:GridView ID="myGridView" runat="server" AutoGenerateColumns="False">
+                <Columns>
+                    <asp:BoundField DataField="first_name" HeaderText="First Namr" />
+                    <asp:BoundField DataField="last_name" HeaderText="Name" />
+                    <asp:BoundField DataField="is_emp" HeaderText="Employee" />
+                    <asp:TemplateField HeaderText="Actions">
+                        <ItemTemplate>
+                            <asp:Button ID="btnUpdate" runat="server" Text="Update" CommandName="UpdateRecord" CommandArgument='<%# Eval("users_id") %>' />
+                            <asp:Button ID="btnDelete" runat="server" Text="Delete" CommandName="DeleteRecord" CommandArgument='<%# Eval("users_id") %>' />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView>
+
+
+            <!--  
+              <div class="blog-card">
                 <input type="radio" name="select" id="tap-1" checked />
                 <input type="radio" name="select" id="tap-2" />
                 <input type="radio" name="select" id="tap-3" />
@@ -145,7 +167,12 @@
                             <label class="form-label" for="form1Example23">
                                 Confirm Password</label>
                         </div>
-                        <!-- Submit button -->
+
+              -->
+
+
+            <!-- Submit button -->
+            <!---
                         <div class="buttons">
                             <button
                                 type="submit"
@@ -172,7 +199,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
+
+                -->
+
+
 
         </div>
     </form>
