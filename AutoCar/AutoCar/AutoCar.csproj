@@ -136,7 +136,6 @@
     <Content Include="html\order.aspx" />
     <Content Include="html\register.aspx" />
     <Content Include="html\spareParts.aspx" />
-    <Content Include="html\test1.aspx" />
     <Content Include="html\vehicle.aspx" />
     <Content Include="html\vendor.aspx" />
     <Content Include="images\addemployee.svg" />
@@ -243,13 +242,6 @@
     </Compile>
     <Compile Include="html\spareParts.aspx.designer.cs">
       <DependentUpon>spareParts.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="html\test1.aspx.cs">
-      <DependentUpon>test1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="html\test1.aspx.designer.cs">
-      <DependentUpon>test1.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\vehicle.aspx.cs">
       <DependentUpon>vehicle.aspx</DependentUpon>
